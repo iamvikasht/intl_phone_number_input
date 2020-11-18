@@ -25,14 +25,15 @@ class Item extends StatelessWidget {
         textDirection: TextDirection.ltr,
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
+          SizedBox(width: 4,),
           _Flag(
             country: country,
             showFlag: showFlag,
             useEmoji: useEmoji,
           ),
-          SizedBox(width: 12.0),
+          SizedBox(width: 4,),
           Text(
-            '${(country?.dialCode ?? '').padRight(5, "   ")}',
+            '${(country?.dialCode ?? '').padRight(1, "   ")}',
             textDirection: TextDirection.ltr,
             style: textStyle,
           ),
